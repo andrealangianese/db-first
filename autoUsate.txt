@@ -4,14 +4,14 @@ Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardant
 
 nome tabella: USED CARS
 
-ID                                          BIGINT              
-YEAR                                        YEAR                
-GENRE                                       VARCHAR(100)
-COLOR                                       VARCHAR(100)
-CONDITION                                   VARCHAR(100)
-VIN(VEHICLE IDENTIFICATION NUMBER)          CHAR(17)
-CATEGORY                                    VARCHAR(100)
-BRAND                                       VARCHAR(100)
-MODEL                                       VARCHAR(100)    
-NUMBER OF OWNER                             TINYINT(10)
-
+ID                                          BIGINT              UNIQUE, AUTOINCREMENT, NOTNULL        PRIMARY KEY
+YEAR                                        YEAR                NOTNULL, DEFAULT ("0000")
+GENRE                                       VARCHAR(100)        NOTNULL, DEFAULT("unknown")
+COLOR                                       VARCHAR(100)        NOTNULL, DEFAULT("unknown")
+CONDITION                                   VARCHAR(100)        NOTNULL
+VIN(VEHICLE IDENTIFICATION NUMBER)          CHAR(17)            NOTNULL, UNIQUE
+CATEGORY                                    VARCHAR(100)        NOTNULL
+BRAND                                       VARCHAR(100)        NOTNULL
+MODEL                                       VARCHAR(100)        NOTNULL
+NUMBER_OF_OWNER                             TINYINT(10)         NOTNULL
+FUEL_TYPE                                   VARCHAR(50)         NOTNULL
