@@ -4,14 +4,14 @@ Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardant
 
 nome tabella: USED CARS
 
-ID
-YEAR
-GENRE
-COLOR
-CONDITION
-VIN(VEHICLE IDENTIFICATION NUMBER)
-CATEGORY
-BRAND
-MODEL
-NUMBER OF OWNER
+ID                                          BIGINT              
+YEAR                                        YEAR                
+GENRE                                       VARCHAR(100)
+COLOR                                       VARCHAR(100)
+CONDITION                                   VARCHAR(100)
+VIN(VEHICLE IDENTIFICATION NUMBER)          CHAR(17)
+CATEGORY                                    VARCHAR(100)
+BRAND                                       VARCHAR(100)
+MODEL                                       VARCHAR(100)    
+NUMBER OF OWNER                             TINYINT(10)
 
